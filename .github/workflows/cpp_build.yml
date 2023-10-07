@@ -1,0 +1,21 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install g++
+      run: sudo apt-get install g++
+
+    - name: Build C++ code
+      run: g++ -o cmp_cpp cmp_cpp.cpp responses.cpp greetings.cpp jokes.cpp
+
+    - name: Run C++ code
+      run: ./cmp_cpp
