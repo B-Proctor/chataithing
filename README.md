@@ -1,4 +1,4 @@
-# Conversation AI
+   # Psedo Conversation AI
 
 Welcome to the Conversation AI, a simple but engaging command-line chatbot and game hub! This project aims to provide a fun and interactive way to chat with the AI, enjoy some entertaining games
 and explore various commands.
